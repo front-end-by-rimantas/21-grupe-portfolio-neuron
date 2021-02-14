@@ -27,5 +27,6 @@ Design: [Cristino](http://shreethemes.in/cristino/layouts/index.html)
 
 [Rimantas](https://github.com/belauzas)
 [Simonas](https://github.com/SimonasMiezetis)
+[Artūras](https://github.com/Arturas1989)
 
 _susirašome savo vardus ir nuorodas į Github profilį ir/arba Linkedin profilį_
