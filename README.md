@@ -11,7 +11,7 @@ This project is for educational porpuses only. Pull request are welcome, but pri
 
 Site published at https://front-end-by-rimantas.github.io/21-grupe-portfolio/
 
-Design: [Cristino](http://shreethemes.in/cristino/layouts/index.html)
+Design: [Neuron](http://demo.auburnforest.com/html/neuron/demo/index.html)
 
 ## Project features
 
@@ -28,5 +28,8 @@ Design: [Cristino](http://shreethemes.in/cristino/layouts/index.html)
 [Rimantas](https://github.com/belauzas)
 [Simonas](https://github.com/SimonasMiezetis)
 [Artūras](https://github.com/Arturas1989)
-
-_susirašome savo vardus ir nuorodas į Github profilį ir/arba Linkedin profilį_
+[Laurynas](https://github.com/Raulynas)
+[Jūratė](https://github.com/Jurate87)
+[Stanislav](https://github.com/Stanislav84)
+[Milda](https://github.com/MildaPau)
+[Aurelija](https://github.com/AAGG0213)
