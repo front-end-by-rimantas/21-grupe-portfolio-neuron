@@ -1,5 +1,18 @@
 /* header */
+
 /* hero */
+@media (min-width: 576px) {
+  .column {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .column {
+    width: 50%;
+  }
+}
+
 /* introduction */
 /* resume */
 /* achievements */
@@ -10,4 +23,16 @@
 /* how we works */
 /* blog */
 /* contact us */
+@media (min-width: 576px) {
+  input,
+  textarea {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  input {
+    width: 50%;
+  }
+}
 /* footer */
