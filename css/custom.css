@@ -23,7 +23,7 @@
 /* how we works */
 /* blog */
 /* contact us */
-@media (min-width: 576px) {
+@media (min-width: 320px) {
   input,
   textarea {
     float: left;
