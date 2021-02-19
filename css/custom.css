@@ -1,6 +1,8 @@
 /* header */
 
 /* hero */
+
+/* introduction */
 @media (min-width: 576px) {
   .column {
     float: left;
@@ -12,8 +14,6 @@
     width: 50%;
   }
 }
-
-/* introduction */
 /* resume */
 /* achievements */
 /* services */
