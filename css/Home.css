@@ -3,7 +3,6 @@
 @import './components/variables.css';
 @import './components/layout.css';
 @import './components/utility.css';
-@import './custom.css';
 /* 3rd party */
 @import './font-awesome.min.css';
 
@@ -15,7 +14,38 @@
 @import './components/button-hero.css';
 
 /* introduction */
+@media (min-width: 576px) {
+  .column {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .column {
+    width: 50%;
+  }
+}
 /* resume */
+.resume > h2 {
+  margin-top: 50px;
+  font-size: 29px;
+  line-height: 32px;
+}
+
+.resume > p {
+  margin-top: 20px;
+}
+
+.resume > div.btn {
+  display: inline-block;
+  margin-top: 20px;
+  width: 160px;
+  padding: 10px 20px;
+  background-color: green;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
 /* achievements */
 /* services */
 /* latest projects */
@@ -24,4 +54,16 @@
 /* how we works */
 /* blog */
 /* contact us */
+@media (min-width: 320px) {
+  input,
+  textarea {
+    float: left;
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  input {
+    width: 50%;
+  }
+}
 /* footer */
