@@ -1,0 +1,44 @@
+.hero-main-section .btn {
+  display: inline-block;
+  padding: 5px 20px;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 24px;
+  border-radius: 50px;
+  border: solid 1px #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.hero-main-section .btn-more {
+  background-color: none;
+  color: var(--main-color);
+}
+.hero-main-section .btn-more:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+.hero-main-section .btn-join {
+  background-color: var(--main-color);
+  color: #fff;
+  margin-left: 10px;
+}
+.hero-main-section .btn-join:hover {
+  background-color: #fff;
+  color: var(--main-color);
+}
+
+@media (min-width: 768px) {
+  .hero-main-section .btn {
+  padding: 6px 25px;
+  font-size: 16px;
+  line-height: 32px;
+}
+}
+@media (min-width: 992px) {
+  .hero-main-section .btn {
+  padding: 6px 30px;
+  font-size: 18px;
+  line-height: 36px;
+}
+}

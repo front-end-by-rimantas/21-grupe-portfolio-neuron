@@ -3,12 +3,17 @@
 @import './components/variables.css';
 @import './components/layout.css';
 @import './components/utility.css';
+@import './custom.css';
 /* 3rd party */
+@import './font-awesome.min.css';
+
 /* components */
 
 /* CUSTOM HOME PAGE CSS */
 /* header */
 /* hero */
+@import './components/button-hero.css';
+
 /* introduction */
 @media (min-width: 576px) {
   .column {
