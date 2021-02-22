@@ -1,0 +1,17 @@
+.row {
+  display: inline-block;
+  width: 100%;
+}
+.row img {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.row h3 {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: center;
+}
