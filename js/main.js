@@ -2,6 +2,9 @@
 /* header */
 /* hero */
 /* introduction */
+import { introduction } from './components/introduction/introduction.js';
+import { introductionData } from './data/introductionData.js';
+
 /* resume */
 /* achievements */
 /* services */
@@ -17,6 +20,8 @@
 /* header */
 /* hero */
 /* introduction */
+introduction('introductionData');
+
 /* resume */
 /* achievements */
 /* services */
