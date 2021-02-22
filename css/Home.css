@@ -303,6 +303,7 @@ width: 100%;
   content: "+";
   display: inline-block;
   margin-left: 5px;
+
 }
 .achievement-text h4 {
   text-transform: capitalize;
@@ -341,6 +342,69 @@ width: 100%;
 
 /* services */
 /* latest projects */
+.services-title {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  text-transform: capitalize;
+  position: relative;
+}
+.services-title > h2{
+  position: relative;
+  z-index: 2;
+}
+.services-title::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 150px;
+  height: 10px;
+  background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
+  opacity: 0.5;
+  left: calc(50% - 150px/2);
+  top: 26px;
+  z-index: 1;
+}
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+.project-image {
+  width: 100%;
+  border-radius: 5px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: 1s ease;
+  background: linear-gradient(135deg, #01a0f9 45%, #08965b 60%);
+}
+.image-container:hover .overlay {
+  opacity: 0.8;
+}
+.overlay .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  font-weight: bold;
+  /* -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  text-align: center;
+}
+
 /* subscribe */
 /* clients */
 /* how we works */
