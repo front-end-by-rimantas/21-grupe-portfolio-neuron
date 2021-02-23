@@ -3,12 +3,14 @@ function introduction(data) {
 
     //logic
     const { selector, list } = data;
-    const DOM = document.querySelector('.introduction > .introductionColumn');
+    const DOM = document.querySelector(
+        '.introduction .introductionColumn .column'
+    );
 
     let HTML = '';
 
     for (const item of list) {
-        HTML += `<div class="introductionColumn">
+        HTML += `<div class="column">
                     <img src="${item.img}" alt="paveikslelis">
                     <h5>${item.h5}</h5>
                     <p>${item.p}</p>
