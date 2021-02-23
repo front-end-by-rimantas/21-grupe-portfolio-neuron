@@ -4,13 +4,13 @@ function introduction(data) {
     //logic
     const { selector, list } = data;
     const DOM = document.querySelector(
-        '.introduction .introductionColumn .column'
+        '.introduction'
     );
 
     let HTML = '';
 
     for (const item of list) {
-        HTML += `<div class="column col-lg-3">
+        HTML += `<div class="column">
                     <img src="${item.img}" alt="paveikslelis">
                     <h5>${item.h5}</h5>
                     <p>${item.p}</p>
@@ -21,7 +21,7 @@ function introduction(data) {
 
     //rezult return
 
-    DOM.innerHTML = HTML;
+    DOM.insertAdjacentHTML('afterbegin',HTML)
 
     return HTML;
 }

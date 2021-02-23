@@ -1,5 +1,5 @@
 const introductionData = {
-    selector: '#introduction_content',
+    selector: '.row.introduction',
     list: [
         {
             img: '../img/Advanced Programing.png',
