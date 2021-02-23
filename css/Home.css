@@ -229,7 +229,24 @@ nav a:hover {
 }
 
 /* introduction */
-@import './components/introduction.css';
+.introduction-h2 {
+  display: inline-block;
+  width: 100%;
+  font-size: 35px;
+}
+.introduction-p {
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 18px;
+  line-height: 24px;
+  color: #666;
+}
+.introductionColumn2 .btn {
+  background-color: var(--main-color);
+  color: white;
+  margin-top: 30px;
+}
 
 @media (min-width: 576px) {
   .column {
@@ -305,7 +322,6 @@ nav a:hover {
   content: '+';
   display: inline-block;
   margin-left: 5px;
-
 }
 .achievement-text h4 {
   text-transform: capitalize;
@@ -352,19 +368,19 @@ nav a:hover {
   text-transform: capitalize;
   position: relative;
 }
-.services-title > h2{
+.services-title > h2 {
   position: relative;
   z-index: 2;
 }
 .services-title::after {
-  content: "";
+  content: '';
   display: inline-block;
   position: absolute;
   width: 150px;
   height: 10px;
   background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
   opacity: 0.5;
-  left: calc(50% - 150px/2);
+  left: calc(50% - 150px / 2);
   top: 26px;
   z-index: 1;
 }
