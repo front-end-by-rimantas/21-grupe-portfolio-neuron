@@ -3,16 +3,230 @@
 @import './components/variables.css';
 @import './components/layout.css';
 @import './components/utility.css';
-@import './custom.css';
+
 /* 3rd party */
 @import './font-awesome.min.css';
 
 /* components */
+@import './components/button.css';
 
 /* CUSTOM HOME PAGE CSS */
 /* header */
+.header-hero {
+  padding-top: 0;
+}
+.header-hero {
+  background-color: var(--main-color);
+  color: #fff;
+  padding-bottom: 0;
+}
+.header-top-row {
+  padding: 0;
+  border-bottom: solid 0.2px #028de8;
+  font-size: 16px;
+  color: #fff;
+  line-height: 32px;
+  height: 42px;
+}
+.header-top-row .icon {
+  padding-top: 7px;
+}
+.header-top-row .contacts {
+float: left;
+}
+.header-top-row .contacts > a{
+float: left;
+}
+.header-top-row .contact {
+  padding: 0 12px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.4s; 
+}
+.header-top-row .socials > a {
+  color: #fff;
+  margin: 0 8px;
+  line-height: 36px;
+  font-size: 16px;
+  text-decoration: none;
+}
+.header-top-row .socials {
+  line-height: 48px;
+  float: right;
+  transition: all 0.4s;
+}
+.header-bottom-row {
+  height: 58px;
+  margin: 15px;
+}
+.header-top-row .socials > a:hover {
+  opacity: 0.6;
+}
+.header .contact:hover {
+  opacity: 0.6;
+}
+nav {
+  float: right;
+}
+.nav > a {
+  float: left;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 20px;
+  font-size: 16px;
+  padding: 5px 14px;
+  transition: all 0.4s;
+}
+.nav >a:first-of-type {
+  opacity: 0.6;
+}
+nav a:hover {
+  opacity: 0.6;
+}
 /* hero */
-@import './components/button-hero.css';
+.hero-main-section {
+  position: relative;
+  padding: 0 0 50px;
+}
+.hero-left-section h1 {
+  word-break: keep-all;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.hero-left-section p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  word-break: keep-all;
+}
+.hero-left-section {
+  float: left;
+}
+.hero-right-section{
+  bottom: 0;
+  float: left;
+  height: 300px;
+  padding: 0;
+  position: absolute;
+}
+.moving-robot >img {
+  height:70%;
+  position: absolute;
+  bottom: 60px;
+  left: 0px;
+  animation-name: robotMove;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-delay: 2s;
+}
+.mechanics > img {
+  height:50%;
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+}
+@keyframes robotMove {
+  0% {
+  }
+  50% {
+    bottom: 90px;
+  }
+}
+@media (min-width: 576px) {
+  .hero-left-section h1 {
+  font-size: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .hero-main-section h1 {
+    font-size: 36px;
+  }
+  .hero-main-section {
+    padding-top: 60px;
+  }
+  .hero-left-section p {
+    font-size: 18px;
+  }
+    .btn {
+    padding: 6px 25px;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+
+}
+@media (min-width: 992px) {
+  .hero-left-section h1 {
+    font-size: 42px;
+  }
+  .hero-left-section p {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  .hero-main-section {
+    padding-top: 90px;
+  }
+  .hero-left-section {
+    margin-bottom: 90px;
+  }
+  .moving-robot > img{
+  height: 110%;
+  }
+  .mechanics > img{
+  height: 80%;
+  }
+  .btn {
+  padding: 6px 30px;
+  font-size: 18px;
+  line-height: 36px;
+}
+}
+@media (min-width: 1200px) {
+  .hero-main-section {
+  padding-bottom: 200px;
+  }
+    .hero-right-section {
+  bottom: 130px;
+  }
+  .hero-left-section h1 {
+    font-size: 46px;
+    padding: 30px 0 10px;
+  }
+  .hero-left-section p {
+  font-size: 26px;
+  }
+  .moving-robot > img{
+  height: 150%;
+  bottom: 0;
+  }
+  .mechanics > img{
+  height: 100%;
+  bottom: 0;
+  }
+  @keyframes robotMove {
+  0% {
+  }
+  50% {
+    bottom: 30px;
+  }
+  }
+}
+@media (min-width: 1500px) {
+  .hero-main-section {
+  padding-bottom: 300px;
+  }
+.hero-left-section h1 {
+    font-size: 60px;
+  }
+  .moving-robot > img{
+  height: 190%;
+  }
+  .mechanics > img{
+  height: 140%;
+  }
+}
 
 /* introduction */
 @import './components/introduction.css';
@@ -28,6 +242,7 @@
     width: 50%;
   }
 }
+
 /* resume */
 .resume > h2 {
   margin-top: 50px;
@@ -49,13 +264,146 @@
   text-transform: uppercase;
   color: white;
 }
+
 /* achievements */
+.achievements-container {
+  background-color: var(--main-color);
+  background-image: linear-gradient( #0AC777, var(--main-color));
+  padding: 0;
+  margin: 0;
+}
+.achievements {
+  width: 100%;
+  padding: 50px 0;
+  margin: 0;
+}
+.img-blob > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+.img-blob {
+width: 100%;
+}
+.achievement-block {
+  position: relative;
+  width: 100%;
+}
+.achievement-text {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  text-align: center;
+  color: #fff;
+}
+.achievement-text > .number-count {
+  font-size: 30px;
+  font-weight: bold;
+}
+.achievement-text > .number-count::after{
+  content: "+";
+  display: inline-block;
+  margin-left: 5px;
+}
+.achievement-text h4 {
+  text-transform: capitalize;
+  padding-top: 5px;
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  .achievements {
+  padding: 30px 0;
+}
+.achievement-text > .number-count {
+  font-size: 36px;
+}
+.achievement-text > .number-count::after{
+  margin-left: 5px;
+}
+.achievement-text h4 {
+  font-size: 18px;
+}
+}
+@media (min-width: 992px) {
+  .achievements {
+  padding: 20px;
+}
+}
+@media (min-width: 1200px) {
+  .achievements {
+  padding: 15px;
+}
+}
+@media (min-width: 1500px) {
+  .achievements {
+  padding: 0;
+}
+}
+
 /* services */
 /* latest projects */
 /* subscribe */
 /* clients */
 /* how we works */
 /* blog */
+.blog {
+  background-color: white;
+}
+
+.blogheader {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  text-transform: capitalize;
+}
+
+.blog > h2 {
+  margin-top: 50px;
+  font-size: 24px;
+  line-height: 32px;
+  padding: 20px;
+}
+
+.blog > p {
+  margin-top: 20px;
+  line-height: 24px;
+  padding: 20px;
+}
+
+.blog > img {
+  width: 100%;
+}
+
+.blog > button {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  width: 160px;
+  padding: 10px 20px;
+  background-color: lightgreen;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 20px;
+  border-style: none;
+}
+
+.icblog {
+  display: inline-block;
+  margin-top: 8px;
+  margin-left: 20px;
+  color: blue;
+}
+
+.ictext {
+  display: inline-block;
+  margin-top: 8px;
+  margin-left: 8px;
+}
+
 /* contact us */
 @media (min-width: 320px) {
   input,
