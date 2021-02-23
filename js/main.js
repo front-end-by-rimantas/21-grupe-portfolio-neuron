@@ -20,7 +20,7 @@ import { introductionData } from './data/introductionData.js';
 /* header */
 /* hero */
 /* introduction */
-introduction('introductionData');
+introduction(introductionData);
 
 /* resume */
 /* achievements */
