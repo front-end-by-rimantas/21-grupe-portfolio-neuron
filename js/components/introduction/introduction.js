@@ -10,7 +10,7 @@ function introduction(data) {
     let HTML = '';
 
     for (const item of list) {
-        HTML += `<div class="column">
+        HTML += `<div class="column col-lg-3">
                     <img src="${item.img}" alt="paveikslelis">
                     <h5>${item.h5}</h5>
                     <p>${item.p}</p>
