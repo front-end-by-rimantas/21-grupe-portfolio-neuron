@@ -34,16 +34,16 @@
   padding-top: 7px;
 }
 .header-top-row .contacts {
-float: left;
+  float: left;
 }
-.header-top-row .contacts > a{
-float: left;
+.header-top-row .contacts > a {
+  float: left;
 }
 .header-top-row .contact {
   padding: 0 12px;
   color: #fff;
   text-decoration: none;
-  transition: all 0.4s; 
+  transition: all 0.4s;
 }
 .header-top-row .socials > a {
   color: #fff;
@@ -80,7 +80,7 @@ nav {
   padding: 5px 14px;
   transition: all 0.4s;
 }
-.nav >a:first-of-type {
+.nav > a:first-of-type {
   opacity: 0.6;
 }
 nav a:hover {
@@ -105,15 +105,15 @@ nav a:hover {
 .hero-left-section {
   float: left;
 }
-.hero-right-section{
+.hero-right-section {
   bottom: 0;
   float: left;
   height: 300px;
   padding: 0;
   position: absolute;
 }
-.moving-robot >img {
-  height:70%;
+.moving-robot > img {
+  height: 70%;
   position: absolute;
   bottom: 60px;
   left: 0px;
@@ -123,7 +123,7 @@ nav a:hover {
   animation-delay: 2s;
 }
 .mechanics > img {
-  height:50%;
+  height: 50%;
   position: absolute;
   right: 0;
   bottom: 60px;
@@ -137,7 +137,7 @@ nav a:hover {
 }
 @media (min-width: 576px) {
   .hero-left-section h1 {
-  font-size: 30px;
+    font-size: 30px;
   }
 }
 @media (min-width: 768px) {
@@ -150,13 +150,11 @@ nav a:hover {
   .hero-left-section p {
     font-size: 18px;
   }
-    .btn {
+  .btn {
     padding: 6px 25px;
     font-size: 16px;
     line-height: 32px;
-}
-
-
+  }
 }
 @media (min-width: 992px) {
   .hero-left-section h1 {
@@ -173,60 +171,60 @@ nav a:hover {
   .hero-left-section {
     margin-bottom: 90px;
   }
-  .moving-robot > img{
-  height: 110%;
+  .moving-robot > img {
+    height: 110%;
   }
-  .mechanics > img{
-  height: 80%;
+  .mechanics > img {
+    height: 80%;
   }
   .btn {
-  padding: 6px 30px;
-  font-size: 18px;
-  line-height: 36px;
-}
+    padding: 6px 30px;
+    font-size: 18px;
+    line-height: 36px;
+  }
 }
 @media (min-width: 1200px) {
   .hero-main-section {
-  padding-bottom: 200px;
+    padding-bottom: 200px;
   }
-    .hero-right-section {
-  bottom: 130px;
+  .hero-right-section {
+    bottom: 130px;
   }
   .hero-left-section h1 {
     font-size: 46px;
     padding: 30px 0 10px;
   }
   .hero-left-section p {
-  font-size: 26px;
+    font-size: 26px;
   }
-  .moving-robot > img{
-  height: 150%;
-  bottom: 0;
+  .moving-robot > img {
+    height: 150%;
+    bottom: 0;
   }
-  .mechanics > img{
-  height: 100%;
-  bottom: 0;
+  .mechanics > img {
+    height: 100%;
+    bottom: 0;
   }
   @keyframes robotMove {
-  0% {
-  }
-  50% {
-    bottom: 30px;
-  }
+    0% {
+    }
+    50% {
+      bottom: 30px;
+    }
   }
 }
 @media (min-width: 1500px) {
   .hero-main-section {
-  padding-bottom: 300px;
+    padding-bottom: 300px;
   }
-.hero-left-section h1 {
+  .hero-left-section h1 {
     font-size: 60px;
   }
-  .moving-robot > img{
-  height: 190%;
+  .moving-robot > img {
+    height: 190%;
   }
-  .mechanics > img{
-  height: 140%;
+  .mechanics > img {
+    height: 140%;
   }
 }
 
@@ -268,7 +266,7 @@ nav a:hover {
 /* achievements */
 .achievements-container {
   background-color: var(--main-color);
-  background-image: linear-gradient( #0AC777, var(--main-color));
+  background-image: linear-gradient(#0ac777, var(--main-color));
   padding: 0;
   margin: 0;
 }
@@ -284,7 +282,7 @@ nav a:hover {
   max-width: 100%;
 }
 .img-blob {
-width: 100%;
+  width: 100%;
 }
 .achievement-block {
   position: relative;
@@ -301,11 +299,10 @@ width: 100%;
   font-size: 30px;
   font-weight: bold;
 }
-.achievement-text > .number-count::after{
-  content: "+";
+.achievement-text > .number-count::after {
+  content: '+';
   display: inline-block;
   margin-left: 5px;
-
 }
 .achievement-text h4 {
   text-transform: capitalize;
@@ -314,32 +311,32 @@ width: 100%;
 }
 @media (min-width: 768px) {
   .achievements {
-  padding: 30px 0;
-}
-.achievement-text > .number-count {
-  font-size: 36px;
-}
-.achievement-text > .number-count::after{
-  margin-left: 5px;
-}
-.achievement-text h4 {
-  font-size: 18px;
-}
+    padding: 30px 0;
+  }
+  .achievement-text > .number-count {
+    font-size: 36px;
+  }
+  .achievement-text > .number-count::after {
+    margin-left: 5px;
+  }
+  .achievement-text h4 {
+    font-size: 18px;
+  }
 }
 @media (min-width: 992px) {
   .achievements {
-  padding: 20px;
-}
+    padding: 20px;
+  }
 }
 @media (min-width: 1200px) {
   .achievements {
-  padding: 15px;
-}
+    padding: 15px;
+  }
 }
 @media (min-width: 1500px) {
   .achievements {
-  padding: 0;
-}
+    padding: 0;
+  }
 }
 
 /* services */
@@ -352,19 +349,19 @@ width: 100%;
   text-transform: capitalize;
   position: relative;
 }
-.services-title > h2{
+.services-title > h2 {
   position: relative;
   z-index: 2;
 }
 .services-title::after {
-  content: "";
+  content: '';
   display: inline-block;
   position: absolute;
   width: 150px;
   height: 10px;
   background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
   opacity: 0.5;
-  left: calc(50% - 150px/2);
+  left: calc(50% - 150px / 2);
   top: 26px;
   z-index: 1;
 }
@@ -408,6 +405,58 @@ width: 100%;
 }
 
 /* subscribe */
+.mail-img {
+  display: flex;
+  object-fit: none;
+}
+.flex-box {
+  height: 402px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+.h2-form {
+  text-transform: capitalize;
+  font-size: 40px;
+  line-height: 55px;
+  margin: 40px 0;
+}
+.input-subscribe {
+  padding: 10px 0;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccecfe;
+  font-size: 20px;
+}
+.input-subscribe:focus {
+  outline: none;
+}
+.subscribe-btn {
+  position: absolute;
+  bottom: 85px;
+  right: 0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: rgb(4, 171, 215);
+  background: radial-gradient(
+    circle,
+    rgba(4, 171, 215, 1) 0%,
+    rgba(7, 187, 162, 1) 50%
+  );
+}
+.subscribe-btn:focus {
+  outline: none;
+}
+.subscribe-btn:hover {
+  cursor: pointer;
+}
+.fa-location-arrow {
+  color: #fff;
+}
+
 /* clients */
 /* how we works */
 /* blog */
