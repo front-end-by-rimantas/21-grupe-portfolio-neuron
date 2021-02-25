@@ -427,6 +427,20 @@ nav a:hover {
     text-align: center;
     font-size: 39px;
   }
+  .center {
+    text-align: center;
+  }
+  .container > .row > div > .mail-img {
+    width: 70%;
+    margin-left: auto;
+    margin-bottom: auto;
+  }
+}
+@media (min-width: 576px) {
+  .h2-form {
+    text-align: left;
+    font-size: 39px;
+  }
 }
 .position {
   width: 100%;
@@ -468,6 +482,15 @@ nav a:hover {
 }
 
 /* clients */
+
+.clients-logo {
+  height: 40px;
+  object-fit: contain;
+}
+.clients-background {
+  background-image: url(../img/clients-logo/clients-background.png);
+  background-size: cover;
+}
 /* how we works */
 /* blog */
 .blog {
