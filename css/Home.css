@@ -405,22 +405,26 @@ nav a:hover {
 }
 
 /* subscribe */
+
 .mail-img {
-  display: flex;
-  object-fit: none;
+  width: 100%;
+  max-height: 322px;
+  object-fit: contain;
 }
 .flex-box {
-  height: 402px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  position: relative;
 }
 .h2-form {
   text-transform: capitalize;
   font-size: 40px;
   line-height: 55px;
   margin: 40px 0;
+}
+.position {
+  width: 100%;
+  position: relative;
 }
 .input-subscribe {
   padding: 10px 0;
@@ -434,7 +438,7 @@ nav a:hover {
 }
 .subscribe-btn {
   position: absolute;
-  bottom: 85px;
+  bottom: 0;
   right: 0;
   border-radius: 50%;
   width: 40px;
