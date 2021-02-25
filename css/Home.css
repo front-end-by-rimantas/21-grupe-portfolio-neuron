@@ -422,6 +422,12 @@ nav a:hover {
   line-height: 55px;
   margin: 40px 0;
 }
+@media (min-width: 320px) {
+  .h2-form {
+    text-align: center;
+    font-size: 39px;
+  }
+}
 .position {
   width: 100%;
   position: relative;
