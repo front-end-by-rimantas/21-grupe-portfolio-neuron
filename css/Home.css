@@ -20,26 +20,26 @@ header.header {
   z-index: 1;
   position: absolute;
 }
-.header-top-row {
+.header .header-top-row {
   border-bottom: solid 0.2px #028de8;
   font-size: 16px;
   color: #fff;
   line-height: 26px;
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-.header-bottom-row {
+.header .header-bottom-row {
   font-size: 16px;
   color: #fff;
   line-height: 26px;
-  margin-top: 0px !important;
-  margin-bottom: 0px !important;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .header-top-row .contact {
   padding-right: 15px;
   color: #fff;
   text-decoration: none;
-  transition: all 0.4s; 
+  transition: all 0.4s;
 }
 .header-top-row .contacts > .icon {
   padding-top: 5px;
@@ -78,7 +78,7 @@ nav {
   padding: 5px 14px;
   transition: all 0.4s;
 }
-.nav >a:first-of-type {
+.nav > a:first-of-type {
   opacity: 0.6;
 }
 nav a:hover {
@@ -93,10 +93,10 @@ nav a:hover {
   color: #fff;
   padding-top: 100px;
   position: relative;
-  }
-  .hero-left-section {
-    padding-top:10px;
-  }
+}
+.hero-left-section {
+  padding-top: 10px;
+}
 .hero-left-section h1 {
   word-break: keep-all;
   font-size: 24px;
@@ -108,7 +108,7 @@ nav a:hover {
   font-size: 16px;
   word-break: keep-all;
 }
-.moving-robot > img{
+.moving-robot > img {
   width: 100%;
   animation-name: robotMove;
   animation-duration: 2.5s;
@@ -117,7 +117,7 @@ nav a:hover {
   animation-delay: 1s;
   bottom: 0px;
 }
-.mechanics > img{
+.mechanics > img {
   max-width: 100%;
   height: auto;
   padding-top: 40px;
@@ -132,7 +132,7 @@ nav a:hover {
 }
 @media (min-width: 576px) {
   .hero-left-section h1 {
-  font-size: 30px;
+    font-size: 30px;
   }
 }
 @media (min-width: 768px) {
@@ -145,11 +145,11 @@ nav a:hover {
   .hero-left-section p {
     font-size: 18px;
   }
-    .btn {
+  .btn {
     padding: 6px 25px;
     font-size: 16px;
     line-height: 32px;
-} 
+  }
 }
 @media (min-width: 992px) {
   .hero {
@@ -167,48 +167,46 @@ nav a:hover {
     margin-bottom: 90px;
   }
   .btn {
-  padding: 6px 30px;
-  font-size: 18px;
-  line-height: 36px;
-}
+    padding: 6px 30px;
+    font-size: 18px;
+    line-height: 36px;
+  }
 }
 @media (min-width: 1200px) {
   .hero {
-  padding-top: 220px;
+    padding-top: 220px;
   }
   .hero-left-section h1 {
     font-size: 46px;
     padding: 30px 0 10px;
   }
   .hero-left-section p {
-  font-size: 26px;
+    font-size: 26px;
   }
-    .mechanics > img{
-  padding-top: 160px;
-}
-.moving-robot > img{
-width: 110%;
-}
+  .mechanics > img {
+    padding-top: 160px;
+  }
+  .moving-robot > img {
+    width: 110%;
+  }
 }
 @media (min-width: 1500px) {
   .hero {
-  padding-top: 220px;
+    padding-top: 220px;
   }
-.hero-left-section h1 {
+  .hero-left-section h1 {
     font-size: 60px;
   }
-    .hero-left-section {
-    padding-top:30px;
+  .hero-left-section {
+    padding-top: 30px;
   }
-  .mechanics > img{
-  padding-top: 150px;
+  .mechanics > img {
+    padding-top: 150px;
+  }
+  .moving-robot > img {
+    width: 110%;
+  }
 }
-  .moving-robot > img{
-  width: 110%;
-}
-
-
-} 
 
 /* introduction */
 @media (min-width: 576px) {
@@ -248,7 +246,7 @@ width: 110%;
 /* achievements */
 .achievements-container {
   background-color: var(--main-color);
-  background-image: linear-gradient( #0AC777, var(--main-color));
+  background-image: linear-gradient(#0ac777, var(--main-color));
   padding: 0;
   margin: 0;
 }
@@ -264,7 +262,7 @@ width: 110%;
   max-width: 100%;
 }
 .img-blob {
-width: 100%;
+  width: 100%;
 }
 .achievement-block {
   position: relative;
@@ -281,11 +279,10 @@ width: 100%;
   font-size: 30px;
   font-weight: bold;
 }
-.achievement-text > .number-count::after{
-  content: "+";
+.achievement-text > .number-count::after {
+  content: '+';
   display: inline-block;
   margin-left: 5px;
-
 }
 .achievement-text h4 {
   text-transform: capitalize;
@@ -294,32 +291,32 @@ width: 100%;
 }
 @media (min-width: 768px) {
   .achievements {
-  padding: 30px 0;
-}
-.achievement-text > .number-count {
-  font-size: 36px;
-}
-.achievement-text > .number-count::after{
-  margin-left: 5px;
-}
-.achievement-text h4 {
-  font-size: 18px;
-}
+    padding: 30px 0;
+  }
+  .achievement-text > .number-count {
+    font-size: 36px;
+  }
+  .achievement-text > .number-count::after {
+    margin-left: 5px;
+  }
+  .achievement-text h4 {
+    font-size: 18px;
+  }
 }
 @media (min-width: 992px) {
   .achievements {
-  padding: 20px;
-}
+    padding: 20px;
+  }
 }
 @media (min-width: 1200px) {
   .achievements {
-  padding: 15px;
-}
+    padding: 15px;
+  }
 }
 @media (min-width: 1500px) {
   .achievements {
-  padding: 0;
-}
+    padding: 0;
+  }
 }
 
 /* services */
@@ -332,19 +329,19 @@ width: 100%;
   text-transform: capitalize;
   position: relative;
 }
-.services-title > h2{
+.services-title > h2 {
   position: relative;
   z-index: 2;
 }
 .services-title::after {
-  content: "";
+  content: '';
   display: inline-block;
   position: absolute;
   width: 150px;
   height: 10px;
   background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
   opacity: 0.5;
-  left: calc(50% - 150px/2);
+  left: calc(50% - 150px / 2);
   top: 26px;
   z-index: 1;
 }
