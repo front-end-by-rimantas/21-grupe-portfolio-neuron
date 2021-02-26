@@ -229,6 +229,9 @@ nav a:hover {
 }
 
 /* introduction */
+.introductionColumn2 {
+  padding-left: 50px;
+}
 .introduction-h2 {
   display: inline-block;
   width: 100%;
@@ -246,6 +249,44 @@ nav a:hover {
   background-color: var(--main-color);
   color: white;
   margin-top: 30px;
+}
+.introduction .column {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 40px 15px 25px;
+  box-shadow: 2px 10px 50px #ccc;
+}
+.introduction .column > img {
+  width: 70px;
+  height: 69px;
+}
+.introduction .column > h5 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+.introduction .column > p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #666;
+}
+.cover {
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: 1s ease;
+  background: #01a0f9;
+}
+.introduction .column .cover {
+  opacity: 0.8;
 }
 
 @media (min-width: 576px) {
