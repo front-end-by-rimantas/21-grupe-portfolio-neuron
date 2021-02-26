@@ -423,10 +423,7 @@ nav a:hover {
   margin: 40px 0;
 }
 @media (min-width: 320px) {
-  .h2-form {
-    text-align: center;
-    font-size: 39px;
-  }
+  .h2-form,
   .center {
     text-align: center;
   }
@@ -437,7 +434,6 @@ nav a:hover {
 @media (min-width: 576px) {
   .h2-form {
     text-align: left;
-    font-size: 39px;
   }
 }
 .position {
@@ -482,8 +478,13 @@ nav a:hover {
 }
 
 /* clients */
-
-.clients-logo {
+.container > .row.margin {
+  margin-top: 200px;
+  margin-bottom: 0;
+}
+.container > .row > .clients-logo {
+  margin-top: 0;
+  margin-bottom: 0;
   height: 40px;
   object-fit: contain;
 }
