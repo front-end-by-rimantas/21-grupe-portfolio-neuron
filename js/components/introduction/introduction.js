@@ -3,9 +3,7 @@ function introduction(data) {
 
     //logic
     const { selector, list } = data;
-    const DOM = document.querySelector(
-        '.introduction'
-    );
+    const DOM = document.querySelector('.introduction');
 
     let HTML = '';
 
@@ -21,7 +19,7 @@ function introduction(data) {
 
     //rezult return
 
-    DOM.insertAdjacentHTML('afterbegin',HTML)
+    DOM.insertAdjacentHTML('afterbegin', HTML);
 
     return HTML;
 }

@@ -232,9 +232,11 @@ nav a:hover {
 .introductionColumn2 {
   padding-left: 50px;
 }
+
 .introduction-h2 {
   display: inline-block;
   width: 100%;
+  position: relative;
   font-size: 35px;
 }
 .introduction-p {
@@ -246,13 +248,23 @@ nav a:hover {
   color: #666;
 }
 .introductionColumn2 .btn {
-  background-color: var(--main-color);
+  background: rgb(3, 169, 217);
+  background: linear-gradient(
+    146deg,
+    rgba(3, 169, 217, 1) 10%,
+    rgba(10, 199, 119, 1) 100%
+  );
   color: white;
   margin-top: 30px;
+  opacity: 0.85;
+}
+.introductionColumn2 .btn:hover {
+  opacity: 100%;
 }
 .introduction .column {
-  position: relative;
+  background-color: #fff;
   cursor: pointer;
+  transition: 2s ease;
   text-align: center;
   margin-top: 30px;
   border-radius: 10px;
@@ -272,23 +284,22 @@ nav a:hover {
   line-height: 20px;
   color: #666;
 }
-.cover {
-  position: absolute;
-  border-radius: 5px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: auto;
-  opacity: 0;
-  transition: 1s ease;
-  background: #01a0f9;
+.introduction .column:hover {
+  transition: 2s ease;
+  background: rgb(3, 169, 217);
+  background: linear-gradient(
+    146deg,
+    rgba(3, 169, 217, 1) 10%,
+    rgba(10, 199, 119, 1) 100%
+  );
+  z-index: 1;
 }
-.introduction .column .cover {
-  opacity: 0.8;
+.introduction .column:hover h5 {
+  color: #fff;
 }
-
+.introduction .column:hover p {
+  color: #fff;
+}
 @media (min-width: 576px) {
   .column {
     float: left;
