@@ -1,4 +1,4 @@
-const introductionData = {
+/*const introductionData = {
     selector: '.row.introduction',
     list: [
         {

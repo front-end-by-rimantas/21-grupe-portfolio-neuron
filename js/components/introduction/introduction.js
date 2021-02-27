@@ -1,4 +1,4 @@
-function introduction(data) {
+/*function introduction(data) {
     //validation
 
     //logic
