@@ -1,5 +1,5 @@
 const achiementsData = {
-    selector: "#achivements_content",
+    selector: "#achievements_content",
     list: [
         {
             achievNumber: 6000,
