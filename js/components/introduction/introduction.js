@@ -9,7 +9,7 @@ function introduction(data) {
 
     for (const item of list) {
         HTML += `<div class="column">
-                    <img src="${item.img}" alt="paveikslelis">
+                    <i class="${item.img}"></i>
                     <h5>${item.h5}</h5>
                     <p>${item.p}</p>
                 </div>`;

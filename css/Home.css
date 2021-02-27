@@ -271,9 +271,11 @@ nav a:hover {
   padding: 40px 15px 25px;
   box-shadow: 2px 10px 50px #ccc;
 }
-.introduction .column > img {
-  width: 70px;
-  height: 69px;
+.introduction .column > img::before {
+  display: inline;
+}
+.introduction .column > .i::before {
+  display: inline;
 }
 .introduction .column > h5 {
   font-size: 20px;
