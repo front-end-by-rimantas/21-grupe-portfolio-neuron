@@ -1,5 +1,7 @@
 // IMPORTS
 /* header */
+import { socialsRender } from './components/socials/socialsRender.js';
+import { socialsData } from './data/socialsData.js';
 /* hero */
 /* introduction */
 /* resume */
@@ -15,6 +17,7 @@
 
 // EXECUTION
 /* header */
+socialsRender(socialsData);
 /* hero */
 /* introduction */
 /* resume */
