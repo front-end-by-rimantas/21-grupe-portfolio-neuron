@@ -7,7 +7,7 @@
   display: inline-block;
   width: 49%;
   padding: 0 20px;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 .introduction-h2 {
   display: inline-block;
@@ -23,8 +23,8 @@
   line-height: 24px;
   color: #666;
 }
-.introductionColumn2 {
-  margin-top: 140px;
+.introduction .introductionColumn2 {
+  padding-top: 120px;
 }
 .introductionColumn2 .btn {
   background: rgb(3, 169, 217);
