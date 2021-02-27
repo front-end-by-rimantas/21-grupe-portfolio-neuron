@@ -1,24 +1,23 @@
 const achiementsData = {
-    selector: "#achievements_content",
+    selector: '#achievements_content',
     list: [
         {
-            achievNumber: 6000,
-            achievTitle: "Complete projects"
+            achievNumber: 800,
+            achievTitle: 'Complete projects',
         },
         {
             achievNumber: 400,
-            achievTitle: "NLP Experts"
+            achievTitle: 'NLP Experts',
         },
         {
             achievNumber: 3500,
-            achievTitle: "Satisfied Clients"
+            achievTitle: 'Satisfied Clients',
         },
         {
             achievNumber: 8000,
-            achievTitle: "Industries Served"
+            achievTitle: 'Industries Served',
         },
-    ]
-}
+    ],
+};
 
-
-export { achiementsData }
+export { achiementsData };
