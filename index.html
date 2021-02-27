@@ -13,43 +13,44 @@
 
 <body>
     <!-- header -->
-    <div class="main container header-hero row">
-        <header class="header row col-12">
-            <div class="row header-top-row hidden visible-md col-12">
-                <div class="contacts">
-                    <a class="icon fa fa-envelope"></a>
-                    <a href="#" class="contact">info@yourwebsite.com</a>
-                    <a class="icon fa fa-phone"></a>
-                    <a href="#" class="contact">(+123) 45689</a>
-                </div>
-                <div class="socials">
-                    <a href="#" target="_blank" rel="noreferrer noopener" class="fa fa-facebook"></a>
-                    <a href="#" target="_blank" rel="noreferrer noopener" class="fa fa-google-plus"></a>
-                    <a href="#" target="_blank" rel="noreferrer noopener" class="fa fa-twitter"></a>
-                    <a href="#" target="_blank" rel="noreferrer noopener" class="fa fa-linkedin"></a>
-                </div>
+    <header class="container header">
+        <div class="row header-top-row hidden visible-md">
+            <div class="contacts col-6">
+                <a class="icon fa fa-envelope"></a>
+                <a href="mailto:info@yourwebsite.com" class="contact">info@yourwebsite.com</a>
+                <a class="icon fa fa-phone"></a>
+                <a href="callto:(+123) 45689" class="contact">(+123) 45689</a>
             </div>
-            <div class="row header-bottom-row">
-                <div>
-                    <a href="index.html">
-                        <img src="./img/logo-white.png" alt="Logo" />
-                    </a>
-                    <nav class="hidden visible-lg nav">
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Features</a>
-                        <a href="#">Pages</a>
-                        <a href="#">Shop</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Contact</a>
-                    </nav>
-                </div>
+            <div class="socials col-6">
+                <a href="#" target="_blank" rel="noreferrer noopener" class="fa fa-facebook"></a>
+                <a href="#" target="_blank" rel="noreferrer noopener" class="fa fa-google-plus"></a>
+                <a href="#" target="_blank" rel="noreferrer noopener" class="fa fa-twitter"></a>
+                <a href="#" target="_blank" rel="noreferrer noopener" class="fa fa-linkedin"></a>
             </div>
-        </header>
-        <!-- hero -->
+        </div>
+        <div class="row header-bottom-row">
+            <div class="logo col-3">
+                <a href="index.html"><img src="./img/logo-white.png" alt="Logo" /></a>
+            </div>
+            <div class="navigation col-9">
+                <nav class="hidden visible-lg nav">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Features</a>
+                    <a href="#">Pages</a>
+                    <a href="#">Shop</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
+                </nav>
 
-        <section class="hero-main-section row">
-            <div class="row col-12 col-md-7 col-lg-6 hero-left-section">
+            </div>
+        </div>
+    </header>
+    <!-- hero -->
+
+    <section class="container hero">
+        <div class="row">
+            <div class="col-12 col-md-6 hero-left-section">
                 <h1>
                     AI & Machine learning products creators
                 </h1>
@@ -64,18 +65,20 @@
                     Join now
                 </button>
             </div>
-            <div class="hidden visible-md row col-5 col-lg-6 hero-right-section">
-                <div>
-                    <div class="moving-robot hero-images">
-                        <img src=" ./img/moving-robot.png" alt="robot" />
-                    </div>
-                </div>
-                <div class=" mechanics hero-images">
-                    <img src="./img/mechanics.png" alt="mechanics" />
+            <div class="hidden visible-md col-md-3">
+                <div class="moving-robot">
+                    <img src=" ./img/moving-robot.png" alt="robot" />
                 </div>
             </div>
-        </section>
-    </div>
+            <div class="hidden visible-md col-md-3">
+                <div class="mechanics">
+                    <img src=" ./img/mechanics.png" alt="robot" />
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
     <main>
         <!-- introduction -->
         <section class="container">
