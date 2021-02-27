@@ -4,6 +4,8 @@
 /* introduction */
 /* resume */
 /* achievements */
+import { achievements } from "./components/achievements/achievements.js";
+import { achiementsData } from "./data/achievementsData.js";
 /* services */
 /* latest projects */
 /* subscribe */
@@ -19,6 +21,7 @@
 /* introduction */
 /* resume */
 /* achievements */
+achievements(achiementsData)
 /* services */
 /* latest projects */
 /* subscribe */
