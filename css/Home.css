@@ -223,10 +223,21 @@ nav a:hover {
 }
 
 /* resume */
+div.resume > h2::after {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 10px;
+  background: linear-gradient(90deg, #01a0f9 45%, #09c778 60%);
+  top: 26px;
+  left: 2px;
+}
+
 .resume > h2 {
   margin-top: 50px;
   font-size: 29px;
   line-height: 32px;
+  position: relative;
 }
 
 .resume > p {
@@ -235,25 +246,39 @@ nav a:hover {
   line-height: 23px;
 }
 
-.resume > div.btn,
-.resume > div.play-btn {
+.resume > div.btn-res {
   display: inline-block;
   margin-top: 30px;
   width: 160px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   background: linear-gradient(-41deg, #09c778, #01a0f9);
   text-align: center;
   text-transform: uppercase;
-  color: white;
   border-radius: 30px;
 }
 
-.resume > div.play-btn {
-  width: 50px;
+.resume > div.btn-play {
+  display: inline-block;
 }
 
-.resume > div.play-btn > a {
+.resume > div.btn-play {
+  font-size: 30px;
+  height: 50px;
+}
+
+.resume > div.btn-play > a {
   text-decoration: none;
+  background: -webkit-linear-gradient(-41deg, #09c778, #01a0f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 49px;
+  margin-top: 30px;
+  margin-left: 25px;
+}
+
+.resume > div.btn-res > a {
+  text-decoration: none;
+  color: #fff;
 }
 
 /* achievements */
