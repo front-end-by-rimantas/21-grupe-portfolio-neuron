@@ -257,13 +257,16 @@ div.resume > h2::after {
   border-radius: 30px;
 }
 
-.resume > div.btn-play {
-  display: inline-block;
+.resume > div.btn-res:hover {
+  background: linear-gradient(-41deg, #01a0f9, #09c778);
 }
 
 .resume > div.btn-play {
+  display: inline-block;
   font-size: 30px;
   height: 50px;
+  margin-top: 30px;
+  margin-left: 25px;
 }
 
 .resume > div.btn-play > a {
@@ -272,8 +275,27 @@ div.resume > h2::after {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 49px;
-  margin-top: 30px;
-  margin-left: 25px;
+}
+
+.resume > div.btn-play > a:hover {
+  animation: play;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+
+@keyframes play {
+  0% {
+    background: -webkit-linear-gradient(-41deg, #09c778, #01a0f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    background: -webkit-linear-gradient(-41deg, #01a0f9, #09c778);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .resume > div.btn-res > a {
