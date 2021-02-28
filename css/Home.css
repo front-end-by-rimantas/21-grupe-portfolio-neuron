@@ -110,6 +110,7 @@ nav a:hover {
   word-break: keep-all;
 }
 .moving-robot > img {
+  position: relative;
   width: 100%;
   animation-name: robotMove;
   animation-duration: 2.5s;
