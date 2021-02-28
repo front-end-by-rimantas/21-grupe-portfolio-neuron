@@ -9,6 +9,7 @@
 
 /* components */
 @import './components/button.css';
+@import './components/introduction.css';
 
 /* CUSTOM HOME PAGE CSS */
 /* header */
@@ -210,17 +211,6 @@ nav a:hover {
 }
 
 /* introduction */
-@media (min-width: 576px) {
-  .column {
-    float: left;
-    width: 100%;
-  }
-}
-@media (min-width: 768px) {
-  .column {
-    width: 50%;
-  }
-}
 
 /* resume */
 div.resume > h2::after {
