@@ -40,6 +40,15 @@
 .introductionColumn2 .btn:hover {
   opacity: 100%;
 }
+.about-icon i:before {
+  font-size: 70px;
+  line-height: 1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(0deg, #09c778, #01a0f9);
+  transition: all 0.7s ease 0s;
+}
 .introduction .column {
   background-color: #fff;
   cursor: pointer;
@@ -60,7 +69,6 @@
   color: #666;
 }
 .introduction .column:hover {
-  transition: 2s ease;
   background: rgb(3, 169, 217);
   background: linear-gradient(
     146deg,
@@ -68,6 +76,11 @@
     rgba(10, 199, 119, 1) 100%
   );
   z-index: 1;
+  transition: all 2s ease 0s;
+}
+.introduction .column:hover .about-icon i:before {
+  color: #fff;
+  background-image: #fff;
 }
 .introduction .column:hover h5 {
   color: #fff;

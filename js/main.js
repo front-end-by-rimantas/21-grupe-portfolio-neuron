@@ -2,9 +2,6 @@
 /* header */
 /* hero */
 /* introduction */
-import { introduction } from './components/introduction/introduction.js';
-import { introductionData } from './data/introductionData.js';
-
 /* resume */
 /* achievements */
 import { achievements } from './components/achievements/achievements.js';
@@ -24,8 +21,6 @@ import { countDown } from './components/achievements/countDown.js';
 /* header */
 /* hero */
 /* introduction */
-introduction(introductionData);
-
 /* resume */
 /* achievements */
 achievements(achiementsData);
