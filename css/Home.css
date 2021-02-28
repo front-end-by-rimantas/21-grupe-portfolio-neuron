@@ -13,54 +13,52 @@
 
 /* CUSTOM HOME PAGE CSS */
 /* header */
-.header-hero {
+header.header {
+  position: absolute;
   padding-top: 0;
+  margin-top: 0;
+  top: 0;
+  z-index: 1;
+  position: absolute;
 }
-.header-hero {
-  /* background-color: var(--main-color); */
-  background-image: url(../img/heroBackground.jpg);
-  background-size: cover;
-  color: #fff;
-  padding-bottom: 0;
-}
-.header-top-row {
-  padding: 0;
+.header .header-top-row {
   border-bottom: solid 0.2px #028de8;
   font-size: 16px;
   color: #fff;
-  line-height: 32px;
-  height: 42px;
+  line-height: 26px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
-.header-top-row .icon {
-  padding-top: 7px;
-}
-.header-top-row .contacts {
-  float: left;
-}
-.header-top-row .contacts > a {
-  float: left;
+.header .header-bottom-row {
+  font-size: 16px;
+  color: #fff;
+  line-height: 26px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .header-top-row .contact {
-  padding: 0 12px;
+  padding-right: 15px;
   color: #fff;
   text-decoration: none;
   transition: all 0.4s;
+}
+.header-top-row .contacts > .icon {
+  padding-top: 5px;
+  margin-right: 5px;
+}
+.header-top-row .socials {
+  float: left;
+  padding: 0;
+  margin: 0;
+  transition: all 0.4s;
+  text-align: right;
 }
 .header-top-row .socials > a {
   color: #fff;
   margin: 0 8px;
-  line-height: 36px;
+  line-height: 26px;
   font-size: 16px;
   text-decoration: none;
-}
-.header-top-row .socials {
-  line-height: 48px;
-  float: right;
-  transition: all 0.4s;
-}
-.header-bottom-row {
-  height: 58px;
-  margin: 15px;
 }
 .header-top-row .socials > a:hover {
   opacity: 0.6;
@@ -87,10 +85,18 @@ nav {
 nav a:hover {
   opacity: 0.6;
 }
+
 /* hero */
-.hero-main-section {
+.hero {
+  background-color: var(--main-color);
+  background-image: url(../img/heroBackground.jpg);
+  background-size: cover;
+  color: #fff;
+  padding-top: 100px;
   position: relative;
-  padding: 0 0 50px;
+}
+.hero-left-section {
+  padding-top: 10px;
 }
 .hero-left-section h1 {
   word-break: keep-all;
@@ -103,37 +109,26 @@ nav a:hover {
   font-size: 16px;
   word-break: keep-all;
 }
-.hero-left-section {
-  float: left;
-}
-.hero-right-section {
-  bottom: 0;
-  float: left;
-  height: 300px;
-  padding: 0;
-  position: absolute;
-}
 .moving-robot > img {
-  height: 70%;
-  position: absolute;
-  bottom: 60px;
-  left: 0px;
+  width: 100%;
   animation-name: robotMove;
-  animation-duration: 3s;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-delay: 2s;
+  animation-delay: 1s;
+  bottom: 0px;
 }
 .mechanics > img {
-  height: 50%;
-  position: absolute;
-  right: 0;
-  bottom: 60px;
+  max-width: 100%;
+  height: auto;
+  padding-top: 40px;
 }
+
 @keyframes robotMove {
   0% {
   }
   50% {
-    bottom: 90px;
+    bottom: 30px;
   }
 }
 @media (min-width: 576px) {
@@ -142,11 +137,11 @@ nav a:hover {
   }
 }
 @media (min-width: 768px) {
+  .hero {
+    padding-top: 150px;
+  }
   .hero-main-section h1 {
     font-size: 36px;
-  }
-  .hero-main-section {
-    padding-top: 60px;
   }
   .hero-left-section p {
     font-size: 18px;
@@ -158,6 +153,9 @@ nav a:hover {
   }
 }
 @media (min-width: 992px) {
+  .hero {
+    padding-top: 150px;
+  }
   .hero-left-section h1 {
     font-size: 42px;
   }
@@ -166,17 +164,8 @@ nav a:hover {
     padding-top: 20px;
     padding-bottom: 30px;
   }
-  .hero-main-section {
-    padding-top: 90px;
-  }
   .hero-left-section {
     margin-bottom: 90px;
-  }
-  .moving-robot > img {
-    height: 110%;
-  }
-  .mechanics > img {
-    height: 80%;
   }
   .btn {
     padding: 6px 30px;
@@ -185,11 +174,8 @@ nav a:hover {
   }
 }
 @media (min-width: 1200px) {
-  .hero-main-section {
-    padding-bottom: 200px;
-  }
-  .hero-right-section {
-    bottom: 130px;
+  .hero {
+    padding-top: 220px;
   }
   .hero-left-section h1 {
     font-size: 46px;
@@ -198,34 +184,28 @@ nav a:hover {
   .hero-left-section p {
     font-size: 26px;
   }
-  .moving-robot > img {
-    height: 150%;
-    bottom: 0;
-  }
   .mechanics > img {
-    height: 100%;
-    bottom: 0;
+    padding-top: 160px;
   }
-  @keyframes robotMove {
-    0% {
-    }
-    50% {
-      bottom: 30px;
-    }
+  .moving-robot > img {
+    width: 110%;
   }
 }
 @media (min-width: 1500px) {
-  .hero-main-section {
-    padding-bottom: 300px;
+  .hero {
+    padding-top: 220px;
   }
   .hero-left-section h1 {
     font-size: 60px;
   }
-  .moving-robot > img {
-    height: 190%;
+  .hero-left-section {
+    padding-top: 30px;
   }
   .mechanics > img {
-    height: 140%;
+    padding-top: 150px;
+  }
+  .moving-robot > img {
+    width: 110%;
   }
 }
 
