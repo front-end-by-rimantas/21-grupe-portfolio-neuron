@@ -30,18 +30,31 @@
 
 .resume > p {
   margin-top: 20px;
+  font-size: 17px;
+  line-height: 23px;
 }
 
-.resume > div.btn {
+.resume > div.btn,
+.resume > div.play-btn {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 30px;
   width: 160px;
   padding: 10px 20px;
-  background-color: green;
+  background: linear-gradient(-41deg, #09c778, #01a0f9);
   text-align: center;
   text-transform: uppercase;
   color: white;
+  border-radius: 30px;
 }
+
+.resume > div.play-btn {
+  width: 50px;
+}
+
+.resume > div.play-btn > a {
+  text-decoration: none;
+}
+
 /* achievements */
 /* services */
 /* latest projects */
