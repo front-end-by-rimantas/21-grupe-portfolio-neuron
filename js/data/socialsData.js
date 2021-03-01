@@ -3,19 +3,11 @@ const socialsData = {
     list: [
         {
             href: '#',
-            icon: 'facbook',
-        },
-        {
-            href: '#',
             icon: 'facebook',
         },
         {
             href: '#',
-            icon: 'facebook',
-        },
-        {
-            href: '#',
-            icon: 'googleplus',
+            icon: 'google-plus',
         },
         {
             href: '#',
