@@ -9,6 +9,7 @@
 
 /* components */
 @import './components/button.css';
+@import './components/contact.css';
 @import './components/introduction.css';
 
 /* CUSTOM HOME PAGE CSS */
@@ -536,6 +537,9 @@ nav a:hover {
 }
 /* how we works */
 /* blog */
+.blog-container {
+  padding-bottom: 200px;
+}
 .blog {
   background-color: white;
 }
