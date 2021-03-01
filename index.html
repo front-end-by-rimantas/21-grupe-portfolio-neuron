@@ -9,6 +9,7 @@
     <!-- favicon -->
     <!-- css -->
     <link rel="stylesheet" href="./css/Home.css" />
+    <link rel="stylesheet" href="./font/flaticon.css">
 </head>
 
 <body>
@@ -77,18 +78,59 @@
     <main>
         <!-- introduction -->
         <section class="container">
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <div class="column">content</div>
-                    <div class="column">content</div>
-                    <div class="column">content</div>
-                    <div class="column">content</div>
+            <div class="row introduction">
+                <div class="introductioncolumn col-12 col-lg-7">
+                    <div class="left">
+                        <div class="column">
+                            <div class="about-icon">
+                                <i class="flaticon-artificial-intelligence-1"></i>
+                            </div>
+                            <h5>Advanced Programing</h5>
+                            <p>Find out what's working and what's not Dig your data to find</p>
+                        </div>
+                        <div class="column">
+                            <div class="about-icon">
+                                <i class="flaticon-chip"></i>
+                            </div>
+                            <h5>AI Chippest</h5>
+                            <p>Find out what's working and what's not Dig your data to find</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="column">
+                            <div class="about-icon">
+                                <i class="flaticon-artificial-intelligence"></i>
+                            </div>
+                            <h5>Cloud AI intergration</h5>
+                            <p>Find out what's working and what's not Dig your data to find</p>
+                        </div>
+                        <div class="column">
+                            <div class="about-icon">
+                                <i class="flaticon-robotic-arm"></i>
+                            </div>
+                            <h5>Robotic Arm</h5>
+                            <p>Find out what's working and what's not Dig your data to find</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <h2>introduction</h2>
-                    <p>paragraph</p>
-                    <div class="btn">button</div>
-                </div>
+                <div class="col-12 col-lg-5 introductionColumn2">
+                    <h2 class="introduction-h2">
+                        Power Your Creativity With Artificial Intelligence
+                    </h2>
+                    <p class="introduction-p">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Duis at dictum risus, non suscipit arcu.
+                        Quisque aliquam posuere tortor, sit amet convallis
+                        nunc scelerisque in.
+                    </p>
+                    <p class="introduction-p">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Labore eius molesti ae facere, natus
+                        reprehenderit eaque eum, autem ipsam. Magni, error.
+                        Tem pora odit laborum iure inventore possimus
+                        laboriosam qui nam. Fugit!
+                    </p>
+                    <div class="btn">Learn more</div>
             </div>
         </section>
 
@@ -121,46 +163,8 @@
 
 
         <!-- achievements -->
-        <section class="container achievements-container row">
-            <div class="row achievements">
-                <div class="col-12 col-md-6 col-lg-3 achievement-block">
-                    <div class="img-blob">
-                        <img src="./img/achievements-blob.png" alt="">
-                    </div>
-                    <div class="achievement-text">
-                        <div class="number-count">6000</div>
-                        <h4>Complete projects</h4>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 achievement-block">
-                    <div class="img-blob">
-                        <img src="./img/achievements-blob.png" alt="">
-                    </div>
-                    <div class="achievement-text">
-                        <div class="number-count">400</div>
-                        <h4>NLP Experts</h4>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 achievement-block">
-                    <div class="img-blob">
-                        <img src="./img/achievements-blob.png" alt="">
-                    </div>
-                    <div class="achievement-text">
-                        <div class="number-count">3500</div>
-                        <h4>Satisfied clients</h4>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 achievement-block">
-                    <div class="img-blob">
-                        <img src="./img/achievements-blob.png" alt="">
-                    </div>
-                    <div class="achievement-text">
-                        <div class="number-count">8000</div>
-                        <h4>Industries served</h4>
-                    </div>
-                </div>
-            </div>
-            </div>
+        <section class="container achievements-container">
+            <div id="achievements_content" class="row achievements"></div>
         </section>
 
         <!-- services -->
@@ -215,30 +219,33 @@
 
 
         <!-- subscribe -->
-        <section class="container">
-            <div class="row">
-                <img src="" alt="mail" class="col-12 col-lg-4" />
-                <div class="col-12 col-lg-8">
-                    <h2>SUBSCRIBE</h2>
-                    <form>form</form>
-                    <div class="btn">button</div>
+        <section class="container position">
+            <div class="row mail">
+                <div class="col-12 col-lg-3 m-l-lg-1 center">
+                    <img src="./img/mail.png" alt="mail" class="mail-img" >
                 </div>
+                <form class="col-12 col-lg-7 m-r-lg-1 form-flex">
+                    <h2 class="h2-form">don't miss our news and updates!</h2>
+                    <div class="position">
+                        <input type="email" placeholder="Enter Your Email" class="input-subscribe" required>
+                        <button class="subscribe-btn fa fa-location-arrow"  type="submit"></button>
+                    </div>
+                </form>       
             </div>
-        </section>
-
-        <!-- clients -->
-        <section class="container">
-            <div class="row">
-                <img src="#" alt="clients-logo" class="col-4 col-lg-2 m-l-lg-1" />
-                <img src="#" alt="clients-logo" class="col-4 col-lg-2" />
-                <img src="#" alt="clients-logo" class="col-4 col-lg-2" />
-                <img src="#" alt="clients-logo" class="col-4 col-lg-2" />
-                <img src="#" alt="clients-logo" class="col-4 col-lg-2 m-r-lg-1" />
-                <img src="#" alt="clients-logo" class="col-4 col-lg-2 m-l-lg-2" />
-                <img src="#" alt="clients-logo" class="col-4 col-lg-2" />
-                <img src="#" alt="clients-logo" class="col-4 col-lg-2" />
-                <img src="#" alt="clients-logo" class="col-4 col-lg-2 m-r-lg-2" />
-            </div>
+            <!-- clients -->
+            <div class="container clients-background">
+                <div class="row clients-row">
+                    <img src="./img/clients-logo/Progeny.png" alt="clients-logo" class="col-4 col-lg-2 m-l-lg-1 clients-logo" />
+                    <img src="./img/clients-logo/Porello.png" alt="clients-logo" class="col-4 col-lg-2 clients-logo" />
+                    <img src="./img/clients-logo/Pro-West.png" alt="clients-logo" class="col-4 col-lg-2 clients-logo" />
+                    <img src="./img/clients-logo/Binary Stream.png" alt="clients-logo" class="col-4 col-lg-2 clients-logo" />
+                    <img src="./img/clients-logo/pedestal.png" alt="clients-logo" class="col-4 col-lg-2 m-r-lg-1 clients-logo" />
+                    <img src="./img/clients-logo/Progeny.png" alt="clients-logo" class="col-4 col-lg-2 m-l-lg-2 clients-logo" />
+                    <img src="./img/clients-logo/Porello.png" alt="clients-logo" class="col-4 col-lg-2 clients-logo" />
+                    <img src="./img/clients-logo/Pro-West.png" alt="clients-logo" class="col-4 col-lg-2 clients-logo" />
+                    <img src="./img/clients-logo/Binary Stream.png" alt="clients-logo" class="col-4 col-lg-2 m-r-lg-2 clients-logo" />
+                </div>
+            </div>      
         </section>
 
         <!-- how we works -->

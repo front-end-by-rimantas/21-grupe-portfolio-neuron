@@ -6,6 +6,10 @@ import { socialsData } from './data/socialsData.js';
 /* introduction */
 /* resume */
 /* achievements */
+import { achievements } from './components/achievements/achievements.js';
+import { achiementsData } from './data/achievementsData.js';
+import { countDown } from './components/achievements/countDown.js';
+
 /* services */
 /* latest projects */
 /* subscribe */
@@ -22,6 +26,9 @@ socialsRender(socialsData);
 /* introduction */
 /* resume */
 /* achievements */
+achievements(achiementsData);
+countDown();
+
 /* services */
 /* latest projects */
 /* subscribe */
