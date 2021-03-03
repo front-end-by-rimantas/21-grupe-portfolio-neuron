@@ -10,6 +10,7 @@
 /* components */
 @import './components/button.css';
 @import './components/header.css';
+@import './components/contact.css';
 @import './components/introduction.css';
 
 /* CUSTOM HOME PAGE CSS */
@@ -523,6 +524,9 @@ div.resume > h2::after {
 }
 /* how we works */
 /* blog */
+.blog-container {
+  padding-bottom: 200px;
+}
 .blog {
   background-color: white;
 }
