@@ -1,5 +1,7 @@
 // IMPORTS
 /* header */
+import { socialsRender } from './components/socials/socialsRender.js';
+import { socialsData } from './data/socialsData.js';
 /* hero */
 /* introduction */
 /* resume */
@@ -19,6 +21,7 @@ import { countDown } from './components/achievements/countDown.js';
 
 // EXECUTION
 /* header */
+socialsRender(socialsData);
 /* hero */
 /* introduction */
 /* resume */
