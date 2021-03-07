@@ -398,12 +398,8 @@ div.resume > h2::after {
   display: inline-block;
   width: 150px;
   height: 10px;
-  background: rgb(1, 160, 249);
-  background: linear-gradient(
-    90deg,
-    rgba(1, 160, 249, 1) 0%,
-    rgba(9, 199, 120, 1) 80%
-  );
+  background: var(--heading-pseudo-element-background-color1);
+  background: var(--heading-pseudo-element-background-color2);
   position: absolute;
   bottom: 57%;
   left: 0;
@@ -545,6 +541,20 @@ div.resume > h2::after {
   text-transform: capitalize;
   text-align: center;
   font-size: 30px;
+  position: relative;
+}
+.works-h2::after {
+  content: '';
+  display: inline-block;
+  width: 150px;
+  height: 10px;
+  background: var(--heading-pseudo-element-background-color1);
+  background: var(--heading-pseudo-element-background-color2);
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
 }
 
 .works-column {
@@ -624,6 +634,10 @@ div.resume > h2::after {
 .circle > img {
   display: inline-block;
   height: var(--img-height);
+}
+.arrow {
+  color: blue;
+  transform: rotate(45deg);
 }
 /* blog */
 .blog-container {
