@@ -523,32 +523,62 @@ div.resume > h2::after {
   padding-bottom: 30px;
 }
 /* how we works */
+:root {
+  --larger-circle-width-height: 195px;
+  --smaller-circle-width-height: 160px;
+  --animation-end-width-height: 220px;
+  --column-height: 260px;
+  --position-top: 40%;
+  --img-height: 50%;
+}
+@media (min-width: 1200px) {
+  :root {
+    --larger-circle-width-height: 250px;
+    --smaller-circle-width-height: 200px;
+    --animation-end-width-height: 300px;
+    --column-height: 330px;
+    --position-top: 40%;
+    --img-height: 60%;
+  }
+}
+.works-h2 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 30px;
+}
 
 .works-column {
+  position: relative;
   display: flex;
-  height: 350px;
-  object-fit: none;
   flex-direction: column;
+  height: var(--column-height);
   text-align: center;
 }
 .circle-container {
-  height: 330px;
-  position: relative;
+  height: var(--column-height);
+}
+.works-column h3 {
+  text-transform: capitalize;
+  margin-top: 20px;
 }
 .animation-circle {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: var(--position-top);
   transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
 }
-.animation-circle:hover {
-  width: 250px;
-  height: 250px;
+.animation-circle:hover::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: var(--position-top);
+  transform: translate(-50%, -50%);
+  width: var(--larger-circle-width-height);
+  height: var(--larger-circle-width-height);
   border-radius: 50%;
   animation-name: flash;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
 }
@@ -556,9 +586,12 @@ div.resume > h2::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-self: center;
-  width: 250px;
-  height: 250px;
+  position: absolute;
+  left: 50%;
+  top: var(--position-top);
+  transform: translate(-50%, -50%);
+  width: var(--larger-circle-width-height);
+  height: var(--larger-circle-width-height);
   border-radius: 50%;
   border: 1px dashed #33b3fa;
 }
@@ -568,8 +601,8 @@ div.resume > h2::after {
     background-color: #33b3fa;
   }
   100% {
-    width: 320px;
-    height: 320px;
+    width: var(--animation-end-width-height);
+    height: var(--animation-end-width-height);
     border: none;
     background-color: #fff;
   }
@@ -578,8 +611,8 @@ div.resume > h2::after {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: var(--smaller-circle-width-height);
+  height: var(--smaller-circle-width-height);
   border-radius: 50%;
   background: rgb(4, 171, 215);
   background: radial-gradient(
@@ -590,6 +623,7 @@ div.resume > h2::after {
 }
 .circle > img {
   display: inline-block;
+  height: var(--img-height);
 }
 /* blog */
 .blog-container {
