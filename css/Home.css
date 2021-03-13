@@ -523,16 +523,18 @@ div.resume > h2::after {
   --larger-circle-width-height: 195px;
   --smaller-circle-width-height: 160px;
   --animation-end-width-height: 220px;
-  --column-height: 260px;
+  --column-height: 280px;
   --position-top: 40%;
   --img-height: 50%;
+  --small-dashed-circle-width-height: 40px;
+  --dashed-border: 1px dashed #33b3fa;
 }
 @media (min-width: 1200px) {
   :root {
     --larger-circle-width-height: 250px;
     --smaller-circle-width-height: 200px;
     --animation-end-width-height: 300px;
-    --column-height: 330px;
+    --column-height: 340px;
     --position-top: 40%;
     --img-height: 60%;
   }
@@ -569,41 +571,36 @@ div.resume > h2::after {
 }
 .works-column h3 {
   text-transform: capitalize;
-  margin-top: 20px;
+  margin: 20px 0;
 }
-.animation-circle {
+.animation-circle,
+.animation-circle:hover::before,
+.dashed-circle {
+  display: flex;
   position: absolute;
   left: 50%;
   top: var(--position-top);
   transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: var(--larger-circle-width-height);
+  height: var(--larger-circle-width-height);
+}
+.smaller-circle,
+.dashed-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.dashed-circle {
+  border: var(--dashed-border);
 }
 .animation-circle:hover::before {
   content: '';
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  top: var(--position-top);
-  transform: translate(-50%, -50%);
-  width: var(--larger-circle-width-height);
-  height: var(--larger-circle-width-height);
-  border-radius: 50%;
   animation-name: flash;
   animation-duration: 1.5s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
-}
-.dot-circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: 50%;
-  top: var(--position-top);
-  transform: translate(-50%, -50%);
-  width: var(--larger-circle-width-height);
-  height: var(--larger-circle-width-height);
-  border-radius: 50%;
-  border: 1px dashed #33b3fa;
 }
 
 @keyframes flash {
@@ -617,13 +614,9 @@ div.resume > h2::after {
     background-color: #fff;
   }
 }
-.circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.smaller-circle {
   width: var(--smaller-circle-width-height);
   height: var(--smaller-circle-width-height);
-  border-radius: 50%;
   background: rgb(4, 171, 215);
   background: radial-gradient(
     circle,
@@ -631,14 +624,31 @@ div.resume > h2::after {
     rgba(7, 187, 162, 1) 50%
   );
 }
-.circle > img {
+.smaller-circle > img {
   display: inline-block;
   height: var(--img-height);
 }
 .arrow {
-  color: blue;
-  transform: rotate(45deg);
+  display: none;
 }
+.small-dashed-circle {
+  display: none;
+}
+@media (min-width: 992px) {
+  .arrow {
+    display: inline-block;
+    color: blue;
+    transform: rotate(45deg);
+  }
+  .small-dashed-circle {
+    display: inline-block;
+    border: var(--dashed-border);
+    border-radius: 50%;
+    width: var(--small-dashed-circle-width-height);
+    height: var(--small-dashed-circle-width-height);
+  }
+}
+
 /* blog */
 .blog-container {
   padding-bottom: 200px;
