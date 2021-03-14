@@ -579,7 +579,7 @@ div.resume > h2::after {
 }
 .works-column h3 {
   text-transform: capitalize;
-  margin: 15px 0;
+  margin-bottom: 25px;
   
 }
 .animation-circle,
