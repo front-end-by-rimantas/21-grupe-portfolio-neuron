@@ -529,7 +529,7 @@ div.resume > h2::after {
   --larger-circle-width-height: 195px;
   --smaller-circle-width-height: 160px;
   --animation-end-width-height: 220px;
-  --column-height: 280px;
+  --column-height: 240px;
   --position-top: 40%;
   --img-height: 50%;
   --small-dashed-circle-width-height: 40px;
@@ -541,7 +541,7 @@ div.resume > h2::after {
     --larger-circle-width-height: 250px;
     --smaller-circle-width-height: 200px;
     --animation-end-width-height: 300px;
-    --column-height: 340px;
+    --column-height: 280px;
     --position-top: 40%;
     --img-height: 60%;
   }
@@ -551,6 +551,7 @@ div.resume > h2::after {
   text-align: center;
   font-size: 30px;
   position: relative;
+  margin-bottom: 30px;
 }
 .works-h2::after {
   content: '';
@@ -578,7 +579,8 @@ div.resume > h2::after {
 }
 .works-column h3 {
   text-transform: capitalize;
-  margin: 20px 0;
+  margin-bottom: 25px;
+  
 }
 .animation-circle,
 .animation-circle:hover::before,
@@ -638,6 +640,9 @@ div.resume > h2::after {
   display: none;
 }
 @media (min-width: 992px) {
+  .row.flex-box{
+    margin-top: 0px;
+  }
   .flex-box {
     display: flex;
     width: 100%;
@@ -662,7 +667,7 @@ div.resume > h2::after {
     border: var(--dashed-border);
     margin: 0 10px;
     height: 2.5px;
-    width: 160px;
+    width: 155px;
   }
   .small-circle {
     display: inline-block;
@@ -676,6 +681,11 @@ div.resume > h2::after {
 @media (min-width: 1200px) {
   .dashed-line {
     width: 200px;
+  }
+}
+@media (min-width: 1440px) {
+  .dashed-line {
+    width: 275px;
   }
 }
 
