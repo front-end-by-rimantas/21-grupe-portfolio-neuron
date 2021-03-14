@@ -520,6 +520,12 @@ div.resume > h2::after {
 }
 /* how we works */
 :root {
+  --background-elements-color1: rgb(3, 169, 218);
+  --background-elements-color2: linear-gradient(
+    130deg,
+    rgba(3, 169, 218, 1) 0%,
+    rgba(7, 191, 146, 1) 80%
+  );
   --larger-circle-width-height: 195px;
   --smaller-circle-width-height: 160px;
   --animation-end-width-height: 220px;
@@ -527,6 +533,7 @@ div.resume > h2::after {
   --position-top: 40%;
   --img-height: 50%;
   --small-dashed-circle-width-height: 40px;
+  --small-circle-width-height: 30px;
   --dashed-border: 1px dashed #33b3fa;
 }
 @media (min-width: 1200px) {
@@ -617,12 +624,8 @@ div.resume > h2::after {
 .smaller-circle {
   width: var(--smaller-circle-width-height);
   height: var(--smaller-circle-width-height);
-  background: rgb(4, 171, 215);
-  background: radial-gradient(
-    circle,
-    rgba(4, 171, 215, 1) 0%,
-    rgba(7, 187, 162, 1) 50%
-  );
+  background: var(--background-elements-color1);
+  background: var(--background-elements-color2);
 }
 .smaller-circle > img {
   display: inline-block;
@@ -635,17 +638,44 @@ div.resume > h2::after {
   display: none;
 }
 @media (min-width: 992px) {
-  .arrow {
-    display: inline-block;
-    color: blue;
-    transform: rotate(45deg);
+  .flex-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
   }
   .small-dashed-circle {
-    display: inline-block;
     border: var(--dashed-border);
     border-radius: 50%;
     width: var(--small-dashed-circle-width-height);
     height: var(--small-dashed-circle-width-height);
+  }
+  .arrow {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 25px;
+    transform: rotate(45deg);
+    color: var(--background-elements-color1);
+  }
+  .dashed-line {
+    display: inline-block;
+    border: var(--dashed-border);
+    margin: 0 10px;
+    height: 2.5px;
+    width: 160px;
+  }
+  .small-circle {
+    display: inline-block;
+    border-radius: 50%;
+    width: var(--small-circle-width-height);
+    height: var(--small-circle-width-height);
+    background: var(--background-elements-color1);
+    background: var(--background-elements-color2);
+  }
+}
+@media (min-width: 1200px) {
+  .dashed-line {
+    width: 200px;
   }
 }
 
