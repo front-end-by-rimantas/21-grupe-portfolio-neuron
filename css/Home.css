@@ -398,12 +398,8 @@ div.resume > h2::after {
   display: inline-block;
   width: 150px;
   height: 10px;
-  background: rgb(1, 160, 249);
-  background: linear-gradient(
-    90deg,
-    rgba(1, 160, 249, 1) 0%,
-    rgba(9, 199, 120, 1) 80%
-  );
+  background: var(--heading-pseudo-element-background-color1);
+  background: var(--heading-pseudo-element-background-color2);
   position: absolute;
   bottom: 57%;
   left: 0;
@@ -523,6 +519,166 @@ div.resume > h2::after {
   padding-bottom: 30px;
 }
 /* how we works */
+:root {
+  --background-elements-color1: rgb(3, 169, 218);
+  --background-elements-color2: linear-gradient(
+    130deg,
+    rgba(3, 169, 218, 1) 0%,
+    rgba(7, 191, 146, 1) 80%
+  );
+  --larger-circle-width-height: 195px;
+  --smaller-circle-width-height: 160px;
+  --animation-end-width-height: 220px;
+  --column-height: 280px;
+  --position-top: 40%;
+  --img-height: 50%;
+  --small-dashed-circle-width-height: 40px;
+  --small-circle-width-height: 30px;
+  --dashed-border: 1px dashed #33b3fa;
+}
+@media (min-width: 1200px) {
+  :root {
+    --larger-circle-width-height: 250px;
+    --smaller-circle-width-height: 200px;
+    --animation-end-width-height: 300px;
+    --column-height: 340px;
+    --position-top: 40%;
+    --img-height: 60%;
+  }
+}
+.works-h2 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 30px;
+  position: relative;
+}
+.works-h2::after {
+  content: '';
+  display: inline-block;
+  width: 150px;
+  height: 10px;
+  background: var(--heading-pseudo-element-background-color1);
+  background: var(--heading-pseudo-element-background-color2);
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.works-column {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: var(--column-height);
+  text-align: center;
+}
+.circle-container {
+  height: var(--column-height);
+}
+.works-column h3 {
+  text-transform: capitalize;
+  margin: 20px 0;
+}
+.animation-circle,
+.animation-circle:hover::before,
+.dashed-circle {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: var(--position-top);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: var(--larger-circle-width-height);
+  height: var(--larger-circle-width-height);
+}
+.smaller-circle,
+.dashed-circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.dashed-circle {
+  border: var(--dashed-border);
+}
+.animation-circle:hover::before {
+  content: '';
+  animation-name: flash;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes flash {
+  0% {
+    background-color: #33b3fa;
+  }
+  100% {
+    width: var(--animation-end-width-height);
+    height: var(--animation-end-width-height);
+    border: none;
+    background-color: #fff;
+  }
+}
+.smaller-circle {
+  width: var(--smaller-circle-width-height);
+  height: var(--smaller-circle-width-height);
+  background: var(--background-elements-color1);
+  background: var(--background-elements-color2);
+}
+.smaller-circle > img {
+  display: inline-block;
+  height: var(--img-height);
+}
+.arrow {
+  display: none;
+}
+.small-dashed-circle {
+  display: none;
+}
+@media (min-width: 992px) {
+  .flex-box {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .small-dashed-circle {
+    border: var(--dashed-border);
+    border-radius: 50%;
+    width: var(--small-dashed-circle-width-height);
+    height: var(--small-dashed-circle-width-height);
+  }
+  .arrow {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 25px;
+    transform: rotate(45deg);
+    color: var(--background-elements-color1);
+  }
+  .dashed-line {
+    display: inline-block;
+    border: var(--dashed-border);
+    margin: 0 10px;
+    height: 2.5px;
+    width: 160px;
+  }
+  .small-circle {
+    display: inline-block;
+    border-radius: 50%;
+    width: var(--small-circle-width-height);
+    height: var(--small-circle-width-height);
+    background: var(--background-elements-color1);
+    background: var(--background-elements-color2);
+  }
+}
+@media (min-width: 1200px) {
+  .dashed-line {
+    width: 200px;
+  }
+}
+
 /* blog */
 .blog-container {
   padding-bottom: 200px;
